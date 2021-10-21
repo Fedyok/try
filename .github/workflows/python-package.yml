@@ -44,5 +44,5 @@ jobs:
     - name: Build and Push Docker Image
       uses: mr-smithers-excellent/docker-build-push@v4
       with:
-        image: ccrpg9q8s45a94mlu6opi
-        registry: console.cloud.yandex.ru/folders/b1glpequ9t3lej2mfo9k/container-registry/registries
+        image: lab1
+        registry: cr.yandex/crpg9q8s45a94mlu6opi
