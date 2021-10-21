@@ -50,6 +50,6 @@ jobs:
       uses: mr-smithers-excellent/docker-build-push@v4
       with:
         image: cr.yandex/crpg9q8s45a94mlu6opi
-        registry: myimage
+        registry: hww
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
