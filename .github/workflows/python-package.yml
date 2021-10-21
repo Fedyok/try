@@ -47,7 +47,9 @@ jobs:
     - name: Build and Push Docker Image
       uses: mr-smithers-excellent/docker-build-push@v4
       with:
+        tags: ${{ steps.docker_meta.outputs.tags }}
+        file: ./Dockerfile
         image: ccrpg9q8s45a94mlu6opi
         registry: console.cloud.yandex.ru/folders/b1glpequ9t3lej2mfo9k/container-registry/registries
-        username: oauth
-        password: AQAAAAAHNn-YAATuwUNpq3LlC0DepQccXIudX5M
+        username: ${{ github.repository_owner }}
+        password: ${{ secrets.GHCR_PASSWORD} }
