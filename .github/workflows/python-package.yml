@@ -15,8 +15,8 @@ jobs:
         uses: docker/login-action@v1
         with:
           registry: cr.yandex/crpg9q8s45a94mlu6opi
-          username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
+          username: oauth
+          password: AQAAAAAHNn-YAATuwUNpq3LlC0DepQccXIudX5M
   build:
 
     runs-on: ubuntu-latest
