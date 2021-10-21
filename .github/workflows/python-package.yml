@@ -48,6 +48,6 @@ jobs:
       uses: mr-smithers-excellent/docker-build-push@v4
       with:
         image: ccrpg9q8s45a94mlu6opi
-        registry: console.cloud.yandex.ru/folders/b1glpequ9t3lej2mfo9k/container-registry/registries/
+        registry: console.cloud.yandex.ru/folders/b1glpequ9t3lej2mfo9k/container-registry/registries
         username: oauth
         password: AQAAAAAHNn-YAATuwUNpq3LlC0DepQccXIudX5M
