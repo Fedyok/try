@@ -47,8 +47,8 @@ jobs:
     - name: Build and push Docker images
       uses: docker/build-push-action@v1
       with:
-        username: ${{ secrets.DOCKER_USERNAME }}
-        password: ${{ secrets.DOCKER_PASSWORD }}
+        username: ${{ secrets.github.repository_owner}}
+        password: ${{ secrets.github.repository_password}}
         repository: cr.yandex/crpg9q8s45a94mlu6opi
         tag_with_ref: true
         tag_with_sha: true
