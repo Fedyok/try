@@ -52,4 +52,4 @@ jobs:
         image: ccrpg9q8s45a94mlu6opi
         registry: console.cloud.yandex.ru/folders/b1glpequ9t3lej2mfo9k/container-registry/registries
         username: ${{ github.repository_owner }}
-        password: ${{ secrets.GHCR_PASSWORD} }
+        password: ${{ secrets.GHCR_PASSWORD }}
