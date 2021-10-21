@@ -17,8 +17,6 @@ jobs:
           registry: cr.yandex/crpg9q8s45a94mlu6opi
           username: oauth
           password: AQAAAAAHNn-YAATuwUNpq3LlC0DepQccXIudX5M
-          
-    
   build:
 
     runs-on: ubuntu-latest
@@ -46,11 +44,10 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
         
         
-    - name: Build and push Docker images
-      uses: docker/build-push-action@v1
+    - name: Build and Push Docker Image
+      uses: mr-smithers-excellent/docker-build-push@v4
       with:
+        image: ccrpg9q8s45a94mlu6opi
+        registry: console.cloud.yandex.ru
         username: oauth
         password: AQAAAAAHNn-YAATuwUNpq3LlC0DepQccXIudX5M
-        repository: cr.yandex/crpg9q8s45a94mlu6opi
-        tag_with_ref: true
-        tag_with_sha: true
