@@ -39,4 +39,10 @@ jobs:
       run: |
         pytest
         
-  
+    - name: Build and Push Docker Image
+      uses: mr-smithers-excellent/docker-build-push@v4
+      with:
+        image: Dockerfile
+        registry: b1gtmtutt0irakjsrvg6
+        username: ${{ secrets.DOCKER_USERNAME }}
+        password: ${{ secrets.DOCKER_PASSWORD }}
